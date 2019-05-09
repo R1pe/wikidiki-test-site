@@ -1,0 +1,11 @@
+<!-- {{ $showToC := default (default true .Site.Params.BookShowToC) .Params.bookshowtoc }}
+  {{ if and ($showToC) (.Page.TableOfContents) }}
+  <aside class="book-toc fixed">
+    {{ .Page.TableOfContents }}
+    {{ printf  "%#v" .Page.TableOfContents  }}
+  </aside>
+{{ end }} -->
+
+<aside class="book-toc fixed">
+    {{ .Page.TableOfContents }}
+  </aside>
